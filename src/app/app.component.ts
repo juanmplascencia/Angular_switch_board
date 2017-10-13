@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Switchboard';
+  switchboard: boolean[] = [false,false,false,false,false,false,false,false,false,false];
+  switchOnOff(index,data){
+    this.switchboard[index] = data;
+  }
 }
